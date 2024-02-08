@@ -11,7 +11,7 @@ await signInWithEmailAndPassword(auth, 'admin@gmail.com', '123456')
     .catch(() => { console.log('Error') });
 */
 const app = express()
-const port = 4000
+const port = 8080
 const server = createServer(app)
 const io = new Server( server, {
     cors: { origin: '*' }
