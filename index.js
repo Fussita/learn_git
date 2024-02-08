@@ -20,9 +20,6 @@ const io = new Server( server, {
 io.on('connection', (socket) => {
     socket.on('chat_message', (data) => {
         io.emit('chat_message', data)
-        
-
-
     })
 })
 
